@@ -679,6 +679,8 @@ if ($settings['hash_salt']) {
  */
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 
+
+
 /**
  * Override the default service container class.
  *
@@ -722,14 +724,9 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
  * allowed by your site.
  *
  * For example:
- * @code
- * $settings['trusted_host_patterns'] = array(
- *   '^example\.com$',
- *   '^.+\.example\.com$',
- *   '^example\.org$',
- *   '^.+\.example\.org$',
- * );
- * @endcode
+
+
+
  * will allow the site to run off of all variants of example.com and
  * example.org, with all subdomains included.
  */
@@ -775,3 +772,12 @@ $databases['default']['default'] = array (
 );
 $settings['install_profile'] = 'standard';
 $config_directories['sync'] = 'sites/default/files/config_dPuTXMvbl4uj68k7JE3OzUH2loBb5Q55YcvkMtZtg3Ikodqjh6nKBTdV9crqEYLnaItN6RhJxQ/sync';
+
+
+
+ $settings['trusted_host_patterns'] = array(
+ 	'^highstrungpro\.com$',
+    '^highstrungpro$',
+    '^*\.:8888$',
+	'^localhost$',
+  );
